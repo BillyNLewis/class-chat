@@ -1,6 +1,8 @@
 # Class Chat 
 -  Class chat lets students join a group chat for each course they are taking 
  - Built With React Native, Firebase, Expo
+ - Deployed on Expo: https://expo.dev/@billynlewis/classChatApp
+ - Web deployed on Firebase: https://the-class-chat.web.app/
 
 # To run app
   - cd into directory you want to download to
