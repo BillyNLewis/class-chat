@@ -15,6 +15,8 @@ import CustomListItem from '../components/CustomListItem';
 const HomeScreen = ({ navigation }) => {
   const [chats, setChats] = useState([]);
   const [displayName, setDisplayName] = useState('');
+  const [removeUser, setRemoveUser] = useState(false);
+
   //Sign out user
   const signOutUer = () => {
     auth.signOut().then(() => {
@@ -44,7 +46,7 @@ const HomeScreen = ({ navigation }) => {
         )
       );
     return unsubscribe;
-  }, []);
+  }, [removeUser]);
 
   //create header for home screen
   useLayoutEffect(() => {
@@ -120,6 +122,7 @@ const HomeScreen = ({ navigation }) => {
             imageURL = {imageURL} 
             secNum = {secNum}
             enterChat={enterChat}
+            setRemoveUser = {setRemoveUser}
           />
         ))}
       </ScrollView>

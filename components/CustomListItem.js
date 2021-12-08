@@ -4,12 +4,10 @@ import { ListItem, Avatar, Icon, Button } from 'react-native-elements';
 import { db, auth } from '../firebase';
 
 //list item for HomeScreen
-const CustomListItem = ({ id, chatName, imageURL, secNum, enterChat }) => {
+const CustomListItem = ({ id, chatName, imageURL, secNum, enterChat, setRemoveUser }) => {
   const [chatMessages, setChatMessages] = useState('');
   const [usersArr, setUsersArr] = useState(['']);
-  const [removeUser, setRemoveUser] = useState(false);
-  // const [ignored, forceUpdate] = useReducer((x) => x + 1, 0);
-//hi
+  
   //Grab all messages from a chat
   useEffect(() => {
     const unsubscribe = db
@@ -22,7 +20,7 @@ const CustomListItem = ({ id, chatName, imageURL, secNum, enterChat }) => {
       );
 
     return unsubscribe;
-  }, [removeUser]);
+  }, []);
 
   //remove user from a chat
   function removeUserFromChat() {
