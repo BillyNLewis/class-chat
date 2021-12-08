@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "class-chat",
-    "slug": "class-chat",
+    "name": "classChat",
+    "slug": "classChat",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,14 +18,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.enchantedfalcon.class-chat"
+      "bundleIdentifier": "com.enchantedfalcon.classChat"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.enchantedfalcon.class-chat"
+      "package": "com.enchantedfalcon.classChat"
     },
     "web": {
       "favicon": "./assets/favicon.png"
