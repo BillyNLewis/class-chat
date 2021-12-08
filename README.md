@@ -1,6 +1,6 @@
 # Class Chat 
  - Built With React Native, Firebase, Expo
- - Deployed on Expo: https://expo.dev/@billynlewis/classChatApp
+ - Deployed on Expo: https://expo.dev/@billynlewis/classChat
  - Login credentials: 
    - Email: Billy@1.com
    - Password: password
