@@ -49,7 +49,7 @@ const HomeScreen = ({ navigation }) => {
   }, [removeUser]);
 
   //create header for home screen
-  useLayoutEffect(() => {
+  useEffect(() => {
     navigation.setOptions({
       title: (
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
